@@ -1,1 +1,72 @@
-@import "../styles/style.css";
+.blog-posts {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    grid-gap: 10rem;
+}
+
+.post {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+}
+
+li {
+    margin: 0 0 20px 0;
+}
+
+button {
+    width: 20%;
+    height: 50px;
+    border-radius: 10%;
+    background-color: white;
+    margin-top: 30px;
+    transition-duration: 0.4s;
+    border:  2px solid #f589ea;
+    align-self: center;
+}
+
+button:hover {
+    background-color: rgba(253, 182, 251, 0.82);
+}
+
+
+/*phone*/
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    .post {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .recipe {
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-top: 5%;
+    }
+
+}
+
+/*ipad*/
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    .blog-posts {
+        margin: 22px;
+        padding: 0;
+        grid-row-gap: 5rem;
+    }
+
+    .post {
+        grid-column-gap: 5rem;
+    }
+}
