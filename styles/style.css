@@ -1,5 +1,6 @@
 @import "./header.css";
 @import "./blog.css";
+@import "./author.css";
 
 body, html {
     height: 100%;
